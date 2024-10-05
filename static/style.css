@@ -1,8 +1,20 @@
+body {
+    text-align: center;
+}
+
 header {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-div {
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; 
+    width: 500px;
+    margin: 0 auto;
+}
+
+div.task {
     width: 150px;
     height: 150px;
     color: #98002E;
