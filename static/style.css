@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+
+header {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; 
+    width: 500px;
+    margin: 0 auto;
+}
+
+div.task {
+    width: 150px;
+    height: 150px;
+    color: #98002E;
+    background-color: #BC9B6A;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+div.task:hover {
+    background-color: #ccaf83;
+}
