@@ -9,7 +9,7 @@
 <body>
 <header>
     <h1>Boston College Go!</h1>
-    <h2>A new game to help freshmen get accommodated to their new environment and get involved at BC!</h2>
+    <p>A new game to help freshmen get accommodated to their new environment and get involved at BC!</p>
 </header>
 <main>
     <section class="initialize">
@@ -19,63 +19,63 @@
     </section>
     
     <div class="board">
-        <div class="task">
+        <div class="task" data-source="0">
             <a href="#">
                 {% if event0 %}
                     <p>{{ event0 }}</p>
                 {% endif %}
             </a>
         </div>
-        <div class="task">
+        <div class="task" data-source="1">
             <a href="#">
                 {% if event1 %}
                     <p>{{ event1 }}</p>
                 {% endif %}
             </a>
         </div>
-        <div class="task">
+        <div class="task" data-source="2">
             <a href="#">
                 {% if event2 %}
                     <p>{{ event2 }}</p>
                 {% endif %}
             </a>
         </div>
-        <div class="task">
+        <div class="task" data-source="3">
             <a href="#">
                 {% if event3 %}
                     <p>{{ event3 }}</p>
                 {% endif %}
             </a>
         </div>
-        <div class="task">
+        <div class="task" data-source="4">
             <a href="#">
                 {% if event4 %}
                     <p>{{ event4 }}</p>
                 {% endif %}
             </a>
         </div>
-        <div class="task">
+        <div class="task" data-source="5">
             <a href="#">
                 {% if event5 %}
                     <p>{{ event5 }}</p>
                 {% endif %}
             </a>
         </div>
-        <div class="task">
+        <div class="task" data-source="6">
             <a href="#">
                 {% if event6 %}
                     <p>{{ event6 }}</p>
                 {% endif %}
             </a>
         </div>
-        <div class="task">
+        <div class="task" data-source="7">
             <a href="#">
                 {% if event7 %}
                     <p>{{ event7 }}</p>
                 {% endif %}
             </a>
         </div>
-        <div class="task">
+        <div class="task" data-source="8">
             <a href="#">
                 {% if event8 %}
                     <p>{{ event8 }}</p>
@@ -84,9 +84,6 @@
         </div>
     </div>
 
-    {% if result %}
-        <p>Result: {{ result }}</p>
-    {% endif %}
 </main>
 </body>
 </html>

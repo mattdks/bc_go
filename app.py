@@ -37,7 +37,6 @@ def home():
 
 @app.route('/run_code', methods=['POST'])
 def run_code():
-    result1 = None
     event0 = None
     event1 = None
     event2 = None
@@ -67,7 +66,7 @@ def run_code():
         event6=events[6]
         event7=events[7]
         event8=events[8]
-    return render_template('index.html', result=result1,event0=event0,event1=event1,event2=event2,event3=event3,event4=event4,event5=event5,event6=event6,event7=event7,event8=event8)
+    return render_template('index.html', event0=event0,event1=event1,event2=event2,event3=event3,event4=event4,event5=event5,event6=event6,event7=event7,event8=event8)
 
 if __name__ == '__main__':
     app.run(debug=True)

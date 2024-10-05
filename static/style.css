@@ -1,9 +1,5 @@
 body {
     text-align: center;
-}
-
-header {
-    padding: 40px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: url("./images/bc_seal.svg");
     background-repeat: no-repeat;
@@ -11,27 +7,29 @@ header {
     background-size: 200px;
 }
 
-#init {
-    height: 100px;
-    width: 100px;
+header {
+    margin: 10px;
+    padding: 20px;
+    text-align: top;
 }
 
-.initialize {
-    margin: 20px;
-    padding: 20px;
+#init {
+    height: 50px;
+    width: 150px;
+    margin: 10px;
 }
 
 .board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px; 
-    width: 500px;
+    grid-gap: 5px; 
+    width: 400px;
     margin: 0 auto;
 }
 
 .task {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     border-radius: 5px;
     background-color: #BC9B6A;
     transition: background-color 0.3s;
