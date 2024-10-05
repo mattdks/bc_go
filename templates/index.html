@@ -14,54 +14,72 @@
 <main>
     <section class="initialize">
         <form action="/run_code" method="POST">
-            <button id="init" type="submit">Generate 9 Activities!</button>
+            <button id="init" type="submit">Generate 9 New Activities!</button>
         </form>
     </section>
     
     <div class="board">
         <div class="task">
             <a href="#">
-                <p>Goal will go here.</p>
+                {% if event0 %}
+                    <p>{{ event0 }}</p>
+                {% endif %}
             </a>
         </div>
         <div class="task">
             <a href="#">
-                <p>Goal will go here.</p>
+                {% if event1 %}
+                    <p>{{ event1 }}</p>
+                {% endif %}
             </a>
         </div>
         <div class="task">
             <a href="#">
-                <p>Goal will go here.</p>
+                {% if event2 %}
+                    <p>{{ event2 }}</p>
+                {% endif %}
             </a>
         </div>
         <div class="task">
             <a href="#">
-                <p>Goal will go here.</p>
+                {% if event3 %}
+                    <p>{{ event3 }}</p>
+                {% endif %}
             </a>
         </div>
         <div class="task">
             <a href="#">
-                <p>Goal will go here.</p>
+                {% if event4 %}
+                    <p>{{ event4 }}</p>
+                {% endif %}
             </a>
         </div>
         <div class="task">
             <a href="#">
-                <p>Goal will go here.</p>
+                {% if event5 %}
+                    <p>{{ event5 }}</p>
+                {% endif %}
             </a>
         </div>
         <div class="task">
             <a href="#">
-                <p>Goal will go here.</p>
+                {% if event6 %}
+                    <p>{{ event6 }}</p>
+                {% endif %}
             </a>
         </div>
         <div class="task">
             <a href="#">
-                <p>Goal will go here.</p>
+                {% if event7 %}
+                    <p>{{ event7 }}</p>
+                {% endif %}
             </a>
         </div>
         <div class="task">
             <a href="#">
-                <p>Goal will go here.</p>
+                {% if event8 %}
+                    <p>{{ event8 }}</p>
+                {% endif %}
             </a>
         </div>
     </div>
