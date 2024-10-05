@@ -14,7 +14,7 @@ def sort_data():
         print()
         bigdict[categories[i]][int(points[i])].append(mission[i])
 
-    return str(bigdict)
+    return bigdict
 
 app = Flask(__name__)
 
@@ -24,11 +24,12 @@ def home():
 
 @app.route('/run_code', methods=['POST'])
 def run_code():
-    result = None
+    dict=sort_data()
+    result1 = None
     if request.method == 'POST':
         # Example: Replace this with your custom Python code
-        result = sort_data()
-    return render_template('index.html', result=result)
+        result1 = dict["Boston"][1][0]
+    return render_template('index.html', result=result1)
 
 if __name__ == '__main__':
     app.run(debug=True)
