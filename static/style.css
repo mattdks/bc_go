@@ -20,19 +20,26 @@ header {
     margin: 0 auto;
 }
 
-div.task {
+.task {
     width: 150px;
     height: 150px;
-    color: #98002E;
+    border-radius: 5px;
     background-color: #BC9B6A;
-    border: none;
+    transition: background-color 0.3s;
+}
+
+.task a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s;
+    color: #98002E;
 }
 
-div.task:hover {
+.task a:hover {
     background-color: #ccaf83;
 }
