@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITLE HERE</title>
+    <title>Boston College Go!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Run Python Code</h1>
+<header>
+    <h1>Boston College Go!</h1>
+    <h2>A new game to help freshmen get accomodated to their new environment and get involved at BC!</h2>
+</header>
+<main>
+    <div class="task">
+        <p>Goal will go here.</p>
+    </div>
 
     <form action="/run_code" method="POST">
         <button type="submit">Run Code</button>
@@ -15,5 +23,6 @@
     {% if result %}
         <p>Result: {{ result }}</p>
     {% endif %}
+</main>
 </body>
 </html>
