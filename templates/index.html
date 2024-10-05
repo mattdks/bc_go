@@ -12,6 +12,12 @@
     <h2>A new game to help freshmen get accomodated to their new environment and get involved at BC!</h2>
 </header>
 <main>
+    <section class="initialize">
+        <form action="/run_code" method="POST">
+            <button id="init" type="submit">Generate 9 Activities!</button>
+        </form>
+    </section>
+    
     <div class="board">
         <div class="task">
             <a href="#">
@@ -59,10 +65,6 @@
             </a>
         </div>
     </div>
-
-    <form action="/run_code" method="POST">
-        <button type="submit">Run Code</button>
-    </form>
 
     {% if result %}
         <p>Result: {{ result }}</p>

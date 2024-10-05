@@ -4,12 +4,21 @@ body {
 
 header {
     padding: 40px;
-    margin-bottom: 20px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: url("./images/bc_seal.svg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 200px;
+}
+
+#init {
+    height: 100px;
+    width: 100px;
+}
+
+.initialize {
+    margin: 20px;
+    padding: 20px;
 }
 
 .board {
