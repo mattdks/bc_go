@@ -51,7 +51,10 @@ def run_code():
     e=nine_events(dict)
     events=[]
     for i in e:
-        s=i[0]+" - "+str(i[1])+" points"
+        if i[1]>1:
+            s=i[0]+" - "+str(i[1])+" points"
+        else:
+            s=i[0]+" - "+str(i[1])+" point"
         events.append(s)
 
     if request.method == 'POST':
