@@ -21,87 +21,71 @@
     
     <div class="board">
         <div class="task" data-source="0">
-            <a href="#">
-                {% if event0 %}
-                    <p>{{ event0 | safe }}</p>
-                {% endif %}
-            </a>
+            {% if event0 %}
+                <p>{{ event0 | safe }}</p>
+            {% endif %}
         </div>
         <div class="task" data-source="1">
-            <a href="#">
-                {% if event1 %}
-                    <p>{{ event1 | safe }}</p>
-                {% endif %}
-            </a>
+            {% if event1 %}
+                <p>{{ event1 | safe }}</p>
+            {% endif %}
         </div>
         <div class="task" data-source="2">
-            <a href="#">
-                {% if event2 %}
-                    <p>{{ event2 | safe }}</p>
-                {% endif %}
-            </a>
+            {% if event2 %}
+                <p>{{ event2 | safe }}</p>
+            {% endif %}
         </div>
         <div class="task" data-source="3">
-            <a href="#">
-                {% if event3 %}
-                    <p>{{ event3 | safe }}</p>
-                {% endif %}
-            </a>
+            {% if event3 %}
+                <p>{{ event3 | safe }}</p>
+            {% endif %}
         </div>
         <div class="task" data-source="4">
-            <a href="#">
-                {% if event4 %}
-                    <p>{{ event4 | safe }}</p>
-                {% endif %}
-            </a>
+            {% if event4 %}
+                <p>{{ event4 | safe }}</p>
+            {% endif %}
         </div>
         <div class="task" data-source="5">
-            <a href="#">
-                {% if event5 %}
-                    <p>{{ event5 | safe }}</p>
-                {% endif %}
-            </a>
+            {% if event5 %}
+                <p>{{ event5 | safe }}</p>
+            {% endif %}
         </div>
         <div class="task" data-source="6">
-            <a href="#">
-                {% if event6 %}
-                    <p>{{ event6 | safe }}</p>
-                {% endif %}
-            </a>
+            {% if event6 %}
+                <p>{{ event6 | safe }}</p>
+            {% endif %}
         </div>
         <div class="task" data-source="7">
-            <a href="#">
-                {% if event7 %}
-                    <p>{{ event7 | safe }}</p>
-                {% endif %}
-            </a>
+            {% if event7 %}
+                <p>{{ event7 | safe }}</p>
+            {% endif %}
         </div>
         <div class="task" data-source="8">
-            <a href="#">
-                {% if event8 %}
-                    <p>{{ event8 | safe }}</p>
-                {% endif %}
-            </a>
+            {% if event8 %}
+                <p>{{ event8 | safe }}</p>
+            {% endif %}
         </div>
     </div>
 
     <div id="submission" class="modal">
-        <span class="close">&times;</span>
-        <form>
-            <input type="hidden" id="sourceInput" name="source">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="date">Date:</label><br>
-            <input type="date" id="date" name="date" required><br><br>
-            <label for="desc">Description of Activity:</label><br>
-            <textarea placeholder="What did you do?!" name="desc"></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <input type="hidden" id="sourceInput" name="source">
+                <h2>Event Submission</h2>
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+                <label for="desc">Description of Activity:</label><br>
+                <textarea placeholder="What did you do?!" name="desc"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 
 </main>
 <footer>
     <p>Made by Matthew Dukes and Kit Levy for Hack the Heights 2024!</p>
 </footer>
+<script src="{{ url_for('static', filename='/script.js') }}"></script>
 </body>
 </html>
