@@ -93,6 +93,13 @@ footer {
     background-color: #ccaf83;
 }
 
+.overlay-img {
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
 .modal {
     display: none;
     position: fixed;

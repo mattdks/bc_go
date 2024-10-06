@@ -73,49 +73,59 @@
         
         <div class="board">
             <div class="task" data-source="0">
+                <!-- pokeid="{% if id0 %}id0{% endif %}"> -->
                 {% if event0 %}
                     <p>{{ event0 | safe }}</p>
                 {% endif %}
+                <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img0">
             </div>
             <div class="task" data-source="1">
                 {% if event1 %}
                     <p>{{ event1 | safe }}</p>
                 {% endif %}
+                <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img1">
             </div>
             <div class="task" data-source="2">
                 {% if event2 %}
                     <p>{{ event2 | safe }}</p>
                 {% endif %}
+                <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img2">
             </div>
             <div class="task" data-source="3">
                 {% if event3 %}
                     <p>{{ event3 | safe }}</p>
                 {% endif %}
+                <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img3">
             </div>
             <div class="task" data-source="4">
                 {% if event4 %}
                     <p>{{ event4 | safe }}</p>
                 {% endif %}
+                <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img4">
             </div>
             <div class="task" data-source="5">
                 {% if event5 %}
                     <p>{{ event5 | safe }}</p>
                 {% endif %}
+                <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img5">
             </div>
             <div class="task" data-source="6">
                 {% if event6 %}
                     <p>{{ event6 | safe }}</p>
                 {% endif %}
+                <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img6">
             </div>
             <div class="task" data-source="7">
                 {% if event7 %}
                     <p>{{ event7 | safe }}</p>
                 {% endif %}
+                <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img7">
             </div>
             <div class="task" data-source="8">
                 {% if event8 %}
                     <p>{{ event8 | safe }}</p>
                 {% endif %}
+                <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img8">
             </div>
         </div>
 
@@ -175,7 +185,7 @@
     <div id="submission" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <form>
+            <form id="submission-form" action="#" method="post">
                 <input type="hidden" id="sourceInput" name="source">
                 <h2>Event Submission</h2>
                 <label for="date">Date:</label><br>

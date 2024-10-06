@@ -29,6 +29,23 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
+document.getElementById("submission-form").addEventListener('submit', function(event) {
+    event.preventDefault();
+    console.log("Form submitted");
+
+    var source = sourceInput.value;
+
+    if (source) {
+        console.log("Source:", source);
+        const overlayImage = "#img" + document.getElementById(source)
+        console.log("overlayImage", overlayImage);
+        // overlayImage.style.display = "block";
+    }
+
+    this.reset();
+    modal.style.display = "none";
+})
+
 // Close the modal if the user clicks outside the modal content
 window.onclick = function(event) {
     if (event.target == modal) {
