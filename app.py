@@ -36,8 +36,7 @@ def nine_events(dict):
     random.shuffle(a)
     return a
 
-
-
+dict=sort_data()
 
 app = Flask(__name__)
 
@@ -65,15 +64,12 @@ def run_code():
     id6 = None
     id7 = None
     id8 = None
-
-    dict=sort_data()
-    types=list(dict.keys())
     e=nine_events(dict)
     events=[]
-    ids=[]
+    id=[]
     for i in e:
         events.append(i[0])
-        ids.append(i[1])
+        id.append(i[1])
 
     if request.method == 'POST':
         event0=events[0]
