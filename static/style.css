@@ -34,7 +34,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
-    width: 215px;
+    width: 420px;
     margin: 0 auto;
 }
 
