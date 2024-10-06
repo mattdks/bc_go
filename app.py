@@ -73,6 +73,7 @@ def run_code():
     e=nine_events(dict)
     events=[]
     id=[]
+    j=json.dumps(id)
     for i in e:
         events.append(i[0])
         id.append(i[1])
@@ -97,7 +98,7 @@ def run_code():
         id7 = id[7]
         id8 = id[8]
         
-    return render_template('index.html', event0=event0,event1=event1,event2=event2,event3=event3,event4=event4,event5=event5,event6=event6,event7=event7,event8=event8,id0=id0,id1=id1,id2=id2,id3=id3,id4=id4,id5=id5,id6=id6,id7=id7,id8=id8,id_arr=json.dumps(id))
+    return render_template('index.html', event0=event0,event1=event1,event2=event2,event3=event3,event4=event4,event5=event5,event6=event6,event7=event7,event8=event8,id0=id0,id1=id1,id2=id2,id3=id3,id4=id4,id5=id5,id6=id6,id7=id7,id8=id8,id_arr=j)
 
 if __name__ == '__main__':
     app.run(debug=True)

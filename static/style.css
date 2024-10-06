@@ -25,6 +25,11 @@ footer {
     font-size: 10px;
 }
 
+.initialize{
+    display: grid;
+    
+}
+
 #init {
     height: 50px;
     width: 150px;
