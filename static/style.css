@@ -32,6 +32,11 @@ footer {
     background-color: #98002E;
     color:white;
     font-weight: 700;
+    cursor: pointer;
+}
+
+#init:hover {
+    background-color: #b81c4b;
 }
 
 .pokedex {
@@ -54,6 +59,7 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: pointer;
 }
 
 .pokemon img {
@@ -84,6 +90,10 @@ footer {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease;
+}
+
+.pokemon:hover img{
+    filter: brightness(.35);
 }
 
 .pokemon:hover .info-box {
