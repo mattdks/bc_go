@@ -56,15 +56,15 @@ def run_code():
     event6 = None
     event7 = None
     event8 = None
-    id0 = id[0]
-    id1 = id[1]
-    id2 = id[2]
-    id3 = id[3]
-    id4 = id[4]
-    id5 = id[5]
-    id6 = id[6]
-    id7 = id[7]
-    id8 = id[8]
+    id0 = None
+    id1 = None
+    id2 = None
+    id3 = None
+    id4 = None
+    id5 = None
+    id6 = None
+    id7 = None
+    id8 = None
 
     dict=sort_data()
     types=list(dict.keys())
@@ -85,15 +85,16 @@ def run_code():
         event6=events[6]
         event7=events[7]
         event8=events[8]
-        id0 = None
-        id1 = None
-        id2 = None
-        id3 = None
-        id4 = None
-        id5 = None
-        id6 = None
-        id7 = None
-        id8 = None
+        id0 = id[0]
+        id1 = id[1]
+        id2 = id[2]
+        id3 = id[3]
+        id4 = id[4]
+        id5 = id[5]
+        id6 = id[6]
+        id7 = id[7]
+        id8 = id[8]
+        
     return render_template('index.html', event0=event0,event1=event1,event2=event2,event3=event3,event4=event4,event5=event5,event6=event6,event7=event7,event8=event8,id0=id0,id1=id1,id2=id2,id3=id3,id4=id4,id5=id5,id6=id6,id7=id7,id8=id8)
 
 if __name__ == '__main__':
