@@ -52,7 +52,7 @@ document.getElementById("submission-form").addEventListener('submit', function(e
     }
 
     if (date) {
-        document.getElementById("p"+poke_value).querySelector("h5").textContent = "Congratulations! You caught this Pokemon on " + date + "!";
+        document.getElementById("p"+poke_value).querySelector("p").textContent = "Congratulations! You caught this Pokemon on " + date + "!";
     }
 
     this.reset();
