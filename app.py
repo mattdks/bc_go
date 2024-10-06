@@ -18,26 +18,6 @@ def sort_data():
 
     return bigdict
 
-def get_events(dict):
-    events=[]
-    for key in dict:
-        for i in range(3):
-            pt=random.randint(1,4)
-            events.append((dict[key][pt][random.randint(0,len(dict[key][pt])-1)][0],dict[key][pt][random.randint(0,len(dict[key][pt])-1)][1]))
-    
-    
-    arr=events
-    e=set(arr)
-    while len(e)<=9:
-        k=random.choice(list(dict.keys()))
-        n=random.randint(1,4)
-        arr.append((dict[k][n][random.randint(0,len(dict[k][n])-1)][0],dict[k][n][random.randint(0,len(dict[k][n])-1)][1]))
-        e=set(arr)
-
-    a=list(e)
-    random.shuffle(a)
-    return a
-
 def nine_events(dict):
     events=set()
     key1=list(dict.keys())[0]
@@ -54,7 +34,7 @@ def nine_events(dict):
         events.add((dict[key2][n][x][0],dict[key2][n][x][1]))
     while len(events)<9:
         n=random.randint(1,4)
-        x=random.randint(0,len(dict[key2][n])-1)
+        x=random.randint(0,len(dict[key3][n])-1)
         events.add((dict[key3][n][x][0],dict[key3][n][x][1]))
     
     a=list(events)
