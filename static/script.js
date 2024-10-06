@@ -13,6 +13,24 @@ var sourceInput = document.getElementById("sourceInput");
 
 var dateInput = document.getElementById("dateInput");
 
+let seenDataIds = new Set();
+
+async function fetchData() {
+    const response = await fetch('/run_code');
+    const data = await response.json();
+
+    idArray = data.id_arr;
+    
+    updateImgs();
+}
+
+function updateImgs() {
+    seenDataIds.forEach(id => {
+        const imgElement = document.getElementById("p"+id).querySelector("img");
+        imgElement.style.filter = "brightness(1)";
+    })
+}
+
 // Attach click event to each box
 for (var i = 0; i < boxes.length; i++) {
     boxes[i].onclick = function() {
@@ -47,8 +65,9 @@ document.getElementById("submission-form").addEventListener('submit', function(e
     }
 
     if (poke_value) {
-        const makeBright = (document.getElementById("p"+poke_value)).querySelector("img")
+        const makeBright = (document.getElementById("p"+poke_value)).querySelector("img");
         makeBright.style.filter = "brightness(1)";
+        seenDataIds.add(poke_value);
     }
 
     if (date) {
