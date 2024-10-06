@@ -6,6 +6,7 @@ var boxes = document.getElementsByClassName("task");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+var pokeInput = document.getElementById("pokeInput");
 
 // Get the hidden input where we'll store the source
 var sourceInput = document.getElementById("sourceInput");
@@ -15,9 +16,11 @@ for (var i = 0; i < boxes.length; i++) {
     boxes[i].onclick = function() {
         // Get the data-source attribute from the clicked box
         var source = this.getAttribute("data-source");
+        var poke_value = this.getAttribute("pvalue");
 
         // Set the value of the hidden input to the source
         sourceInput.value = source; // value of buttons pushed
+        pokeInput.value = poke_value;
 
         // Display the modal
         modal.style.display = "block";
@@ -34,11 +37,16 @@ document.getElementById("submission-form").addEventListener('submit', function(e
     console.log("Form submitted");
 
     var source = sourceInput.value; //value of button pushed
+    var poke_value = pokeInput.value;
 
     if (source) {
         const overlayImage = document.getElementById("img"+source)
-        // console.log("overlayImage", overlayImage);
         overlayImage.style.display = "block";
+    }
+
+    if (poke_value) {
+        const makeBright = document.getElementById("p"+poke_value)
+        makeBright.style.filter = "brightness(1)";
     }
 
     this.reset();

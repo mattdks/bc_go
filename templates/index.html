@@ -22,106 +22,105 @@
     <section class="main-area">
         <section class="pokedex">
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/1.png') }}" alt="Pokemon 1">
+                <img src="{{ url_for('static', filename='images/1.png') }}" alt="Pokemon 1" id="p1">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/12.png') }}" alt="Pokemon 12">
+                <img src="{{ url_for('static', filename='images/12.png') }}" alt="Pokemon 12" id="p12">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/22.png') }}" alt="Pokemon 22">
+                <img src="{{ url_for('static', filename='images/22.png') }}" alt="Pokemon 22" id="p22">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/2.png') }}" alt="Pokemon 2">
+                <img src="{{ url_for('static', filename='images/2.png') }}" alt="Pokemon 2" id="p2">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/13.png') }}" alt="Pokemon 13">
+                <img src="{{ url_for('static', filename='images/13.png') }}" alt="Pokemon 13" id="p13">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/23.png') }}" alt="Pokemon 23">
+                <img src="{{ url_for('static', filename='images/23.png') }}" alt="Pokemon 23" id="p23">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/3.png') }}" alt="Pokemon 3">
+                <img src="{{ url_for('static', filename='images/3.png') }}" alt="Pokemon 3" id="p3">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/14.png') }}" alt="Pokemon 14">
+                <img src="{{ url_for('static', filename='images/14.png') }}" alt="Pokemon 14" id="p14">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/24.png') }}" alt="Pokemon 24">
+                <img src="{{ url_for('static', filename='images/24.png') }}" alt="Pokemon 24" id="p24">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/4.png') }}" alt="Pokemon 4">
+                <img src="{{ url_for('static', filename='images/4.png') }}" alt="Pokemon 4" id="p4">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/15.png') }}" alt="Pokemon 15">
+                <img src="{{ url_for('static', filename='images/15.png') }}" alt="Pokemon 15" id="p15">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/25.png') }}" alt="Pokemon 25">
+                <img src="{{ url_for('static', filename='images/25.png') }}" alt="Pokemon 25" id="p25">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/5.png') }}" alt="Pokemon 5">
+                <img src="{{ url_for('static', filename='images/5.png') }}" alt="Pokemon 5" id="p5">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/16.png') }}" alt="Pokemon 16">
+                <img src="{{ url_for('static', filename='images/16.png') }}" alt="Pokemon 16" id="p16">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/26.png') }}" alt="Pokemon 26">
+                <img src="{{ url_for('static', filename='images/26.png') }}" alt="Pokemon 26" id="p26">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/6.png') }}" alt="Pokemon 6">
+                <img src="{{ url_for('static', filename='images/6.png') }}" alt="Pokemon 6" id="p6">
             </div>
         </section>
         
         <div class="board">
-            <div class="task" data-source="0">
-                <!-- pokeid="{% if id0 %}id0{% endif %}"> -->
+            <div class="task" data-source="0" pvalue="{{ id0 }}">
                 {% if event0 %}
                     <p>{{ event0 | safe }}</p>
                 {% endif %}
                 <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img0">
             </div>
-            <div class="task" data-source="1">
+            <div class="task" data-source="1" pvalue="{{ id1 }}">
                 {% if event1 %}
                     <p>{{ event1 | safe }}</p>
                 {% endif %}
                 <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img1">
             </div>
-            <div class="task" data-source="2">
+            <div class="task" data-source="2" pvalue="{{ id2 }}">
                 {% if event2 %}
                     <p>{{ event2 | safe }}</p>
                 {% endif %}
                 <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img2">
             </div>
-            <div class="task" data-source="3">
+            <div class="task" data-source="3" pvalue="{{ id3 }}">
                 {% if event3 %}
                     <p>{{ event3 | safe }}</p>
                 {% endif %}
                 <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img3">
             </div>
-            <div class="task" data-source="4">
+            <div class="task" data-source="4" pvalue="{{ id4 }}">
                 {% if event4 %}
                     <p>{{ event4 | safe }}</p>
                 {% endif %}
                 <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img4">
             </div>
-            <div class="task" data-source="5">
+            <div class="task" data-source="5" pvalue="{{ id5 }}">
                 {% if event5 %}
                     <p>{{ event5 | safe }}</p>
                 {% endif %}
                 <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img5">
             </div>
-            <div class="task" data-source="6">
+            <div class="task" data-source="6" pvalue="{{ id6 }}">
                 {% if event6 %}
                     <p>{{ event6 | safe }}</p>
                 {% endif %}
                 <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img6">
             </div>
-            <div class="task" data-source="7">
+            <div class="task" data-source="7" pvalue="{{ id7 }}">
                 {% if event7 %}
                     <p>{{ event7 | safe }}</p>
                 {% endif %}
                 <img src="{{ url_for('static', filename='images/pokeball.png') }}" alt="pokeball" class="overlay-img" id="img7">
             </div>
-            <div class="task" data-source="8">
+            <div class="task" data-source="8" pvalue="{{ id8 }}">
                 {% if event8 %}
                     <p>{{ event8 | safe }}</p>
                 {% endif %}
@@ -131,52 +130,52 @@
 
         <section class="pokedex">
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/27.png') }}" alt="Pokemon 27">
+                <img src="{{ url_for('static', filename='images/27.png') }}" alt="Pokemon 27" id="p27">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/7.png') }}" alt="Pokemon 7">
+                <img src="{{ url_for('static', filename='images/7.png') }}" alt="Pokemon 7" id="p7">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/17.png') }}" alt="Pokemon 17">
+                <img src="{{ url_for('static', filename='images/17.png') }}" alt="Pokemon 17" id="p17">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/28.png') }}" alt="Pokemon 28">
+                <img src="{{ url_for('static', filename='images/28.png') }}" alt="Pokemon 28" id="p28">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/8.png') }}" alt="Pokemon 8">
+                <img src="{{ url_for('static', filename='images/8.png') }}" alt="Pokemon 8" id="p8">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/18.png') }}" alt="Pokemon 18">
+                <img src="{{ url_for('static', filename='images/18.png') }}" alt="Pokemon 18" id="p18">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/29.png') }}" alt="Pokemon 29">
+                <img src="{{ url_for('static', filename='images/29.png') }}" alt="Pokemon 29" id="p29">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/9.png') }}" alt="Pokemon 9">
+                <img src="{{ url_for('static', filename='images/9.png') }}" alt="Pokemon 9" id="p9">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/19.png') }}" alt="Pokemon 19">
+                <img src="{{ url_for('static', filename='images/19.png') }}" alt="Pokemon 19" id="p19">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/30.png') }}" alt="Pokemon 30">
+                <img src="{{ url_for('static', filename='images/30.png') }}" alt="Pokemon 30" id="p30">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/10.png') }}" alt="Pokemon 10">
+                <img src="{{ url_for('static', filename='images/10.png') }}" alt="Pokemon 10" id="p10">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/20.png') }}" alt="Pokemon 20">
+                <img src="{{ url_for('static', filename='images/20.png') }}" alt="Pokemon 20" id="p20">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/32.png') }}" alt="Pokemon 32">
+                <img src="{{ url_for('static', filename='images/32.png') }}" alt="Pokemon 32" id="p32">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/11.png') }}" alt="Pokemon 11">
+                <img src="{{ url_for('static', filename='images/11.png') }}" alt="Pokemon 11" id="p11">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/21.png') }}" alt="Pokemon 21">
+                <img src="{{ url_for('static', filename='images/21.png') }}" alt="Pokemon 21" id="p21">
             </div>
             <div class="pokemon">
-                <img src="{{ url_for('static', filename='images/31.png') }}" alt="Pokemon 31">
+                <img src="{{ url_for('static', filename='images/31.png') }}" alt="Pokemon 31" id="p31">
             </div>
         </section>
     </section>
@@ -187,6 +186,7 @@
             <span class="close">&times;</span>
             <form id="submission-form" action="#" method="post">
                 <input type="hidden" id="sourceInput" name="source">
+                <input type="hidden" id="pokeInput" name="poke-input">
                 <h2>Event Submission</h2>
                 <label for="date">Date:</label><br>
                 <input type="date" id="date" name="date" required><br><br>
