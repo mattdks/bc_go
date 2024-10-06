@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import random
+import json
 
 def sort_data():
     df = pd.read_csv('testdata3.csv')
@@ -96,7 +97,7 @@ def run_code():
         id7 = id[7]
         id8 = id[8]
         
-    return render_template('index.html', event0=event0,event1=event1,event2=event2,event3=event3,event4=event4,event5=event5,event6=event6,event7=event7,event8=event8,id0=id0,id1=id1,id2=id2,id3=id3,id4=id4,id5=id5,id6=id6,id7=id7,id8=id8,id=id)
+    return render_template('index.html', event0=event0,event1=event1,event2=event2,event3=event3,event4=event4,event5=event5,event6=event6,event7=event7,event8=event8,id0=id0,id1=id1,id2=id2,id3=id3,id4=id4,id5=id5,id6=id6,id7=id7,id8=id8,id_arr=json.dumps(id))
 
 if __name__ == '__main__':
     app.run(debug=True)
