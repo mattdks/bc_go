@@ -52,9 +52,9 @@ def run_code():
     events=[]
     for i in e:
         if i[1]>1:
-            s=i[0]+"\n"+str(i[1])+" points"
+            s=i[0]+"<br>"+str(i[1])+" points"
         else:
-            s=i[0]+"\n"+str(i[1])+" point"
+            s=i[0]+"<br>"+str(i[1])+" point"
         events.append(s)
 
     if request.method == 'POST':
