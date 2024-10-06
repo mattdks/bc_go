@@ -65,7 +65,6 @@ def run_code():
         events.append(s)
 
     if request.method == 'POST':
-        # Example: Replace this with your custom Python code
         event0=events[0]
         event1=events[1]
         event2=events[2]
