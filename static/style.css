@@ -9,8 +9,13 @@ body {
 }
 
 header {
-    padding: 10px;
+    margin: 0;
     text-align: top;
+}
+
+header img {
+    width: 40%;
+    height: 40%;
 }
 
 footer {
@@ -23,6 +28,37 @@ footer {
     height: 50px;
     width: 150px;
     margin: 10px;
+}
+
+.pokedex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    width: 215px;
+    margin: 0 auto;
+}
+
+.pokemon {
+    width: 100px;
+    height: 100px;
+    background-color:antiquewhite;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon img {
+    width: 100px;
+    height: 100px;
+}
+
+.main-area {
+    display: flex;
+    flex-direction: row;
 }
 
 .board {
