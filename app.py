@@ -3,8 +3,8 @@ import pandas as pd
 import random
 
 def sort_data():
-    df = pd.read_csv('testdata1.csv')
-    categories = df["Category"]
+    df = pd.read_csv('testdata2.csv')
+    categories = df["Type"]
     points = df["Points"]
     mission = df["Mission"]
     bigdict={}
@@ -22,14 +22,14 @@ def nine_events(dict):
     for key in dict:
         for i in range(3):
             pt=random.randint(1,4)
-            events.append((dict[key][pt][random.randint(0,len(dict[key][pt])-1)],pt))
+            events.append((dict[key][pt][random.randint(0,len(dict[key][pt])-1)],key))
     e=set(events)
 
     while len(e)<9:
         arr=events
         k=random.choice(list(dict.keys()))
         n=random.randint(1,4)
-        arr.append((dict[k][n][random.randint(0,len(dict[k][n])-1)],pt))
+        arr.append((dict[k][n][random.randint(0,len(dict[k][n])-1)],key))
         e=set(arr)
     a=list(e)
     random.shuffle(a)
@@ -60,10 +60,7 @@ def run_code():
     e=nine_events(dict)
     events=[]
     for i in e:
-        if i[1]>1:
-            s=i[0]+"<br>"+str(i[1])+" points"
-        else:
-            s=i[0]+"<br>"+str(i[1])+" point"
+        s=i[0]+"<br>"+"("+i[1]+" Type)"
         events.append(s)
 
     if request.method == 'POST':
