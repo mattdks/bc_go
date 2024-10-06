@@ -11,23 +11,21 @@ body {
 header {
     margin: 0;
     text-align: right;
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-weight: 700;
 }
 
-header img {
-    width: 40%;
-    height: 40%;
+header section {
+    margin-left: 233px;
+    padding: 20px;
 }
 
 footer {
     margin: 10px;
     text-align: right;
     font-size: 10px;
-}
-
-.initialize{
-    display: grid;
-    
 }
 
 #init {
