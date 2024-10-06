@@ -17,7 +17,7 @@ for (var i = 0; i < boxes.length; i++) {
         var source = this.getAttribute("data-source");
 
         // Set the value of the hidden input to the source
-        sourceInput.value = source;
+        sourceInput.value = source; // value of buttons pushed
 
         // Display the modal
         modal.style.display = "block";
@@ -33,13 +33,12 @@ document.getElementById("submission-form").addEventListener('submit', function(e
     event.preventDefault();
     console.log("Form submitted");
 
-    var source = sourceInput.value;
+    var source = sourceInput.value; //value of button pushed
 
     if (source) {
-        console.log("Source:", source);
-        const overlayImage = "#img" + document.getElementById(source)
-        console.log("overlayImage", overlayImage);
-        // overlayImage.style.display = "block";
+        const overlayImage = document.getElementById("img"+source)
+        // console.log("overlayImage", overlayImage);
+        overlayImage.style.display = "block";
     }
 
     this.reset();
