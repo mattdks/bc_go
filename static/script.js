@@ -11,6 +11,8 @@ var pokeInput = document.getElementById("pokeInput");
 // Get the hidden input where we'll store the source
 var sourceInput = document.getElementById("sourceInput");
 
+var dateInput = document.getElementById("dateInput");
+
 // Attach click event to each box
 for (var i = 0; i < boxes.length; i++) {
     boxes[i].onclick = function() {
@@ -34,10 +36,10 @@ span.onclick = function() {
 
 document.getElementById("submission-form").addEventListener('submit', function(event) {
     event.preventDefault();
-    console.log("Form submitted");
 
     var source = sourceInput.value; //value of button pushed
     var poke_value = pokeInput.value;
+    var date = dateInput.value;
 
     if (source) {
         const overlayImage = document.getElementById("img"+source)
@@ -45,8 +47,12 @@ document.getElementById("submission-form").addEventListener('submit', function(e
     }
 
     if (poke_value) {
-        const makeBright = document.getElementById("p"+poke_value)
+        const makeBright = (document.getElementById("p"+poke_value)).querySelector("img")
         makeBright.style.filter = "brightness(1)";
+    }
+
+    if (date) {
+        document.getElementById("p"+poke_value).querySelector("h5").textContent = "Congratulations! You caught this Pokemon on " + date + "!";
     }
 
     this.reset();

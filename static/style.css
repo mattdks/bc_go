@@ -49,6 +49,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .pokemon img {
@@ -61,6 +62,34 @@ footer {
 .main-area {
     display: flex;
     flex-direction: row;
+}
+
+.info-box {
+    background-color:cornsilk;
+    position: absolute;
+    width: 124px;
+    height: 124px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    top: 90px;
+    z-index: 1;
+    font-size: small;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pokemon:hover .info-box {
+    opacity: 1;
+    visibility: visible;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .board {
