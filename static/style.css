@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Noto Serif', serif;
     background-image: url("./images/bc_seal.svg");
     background-repeat: no-repeat;
     background-position: left top;
@@ -8,8 +8,7 @@ body {
 }
 
 header {
-    margin: 10px;
-    padding: 20px;
+    padding: 10px;
     text-align: top;
 }
 
@@ -22,14 +21,14 @@ header {
 .board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px; 
-    width: 400px;
+    grid-gap: 10px; 
+    width: 475px;
     margin: 0 auto;
 }
 
 .task {
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
     border-radius: 5px;
     background-color: #BC9B6A;
     transition: background-color 0.3s;
@@ -45,6 +44,11 @@ header {
     align-items: center;
     justify-content: center;
     color: #98002E;
+}
+
+.task a p {
+    text-align: center;
+    padding: 5px;
 }
 
 .task a:hover {
