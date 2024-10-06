@@ -12,6 +12,12 @@ header {
     text-align: top;
 }
 
+footer {
+    margin: 10px;
+    text-align: right;
+    font-size: 10px;
+}
+
 #init {
     height: 50px;
     width: 150px;
@@ -48,7 +54,7 @@ header {
 
 .task a p {
     text-align: center;
-    padding: 5px;
+    padding: 7px;
 }
 
 .task a:hover {
