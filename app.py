@@ -23,8 +23,17 @@ def nine_events(dict):
         for i in range(3):
             pt=random.randint(1,4)
             events.append((dict[key][pt][random.randint(0,len(dict[key][pt])-1)],pt))
-    random.shuffle(events)
-    return events
+    e=set(events)
+
+    while len(e)<9:
+        arr=events
+        k=random.choice(list(dict.keys()))
+        n=random.randint(1,4)
+        arr.append((dict[k][n][random.randint(0,len(dict[k][n])-1)],pt))
+        e=set(arr)
+    a=list(e)
+    random.shuffle(a)
+    return a
 
 
 
