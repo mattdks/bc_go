@@ -57,6 +57,7 @@ def run_code():
     event8 = None
 
     dict=sort_data()
+    types=list(dict.keys())
     e=nine_events(dict)
     events=[]
     for i in e:
